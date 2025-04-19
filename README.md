@@ -1,0 +1,2 @@
+# SmartScope
+AI voice assistant
