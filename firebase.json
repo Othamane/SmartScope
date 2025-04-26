@@ -1,0 +1,25 @@
+{
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "smartscope-79619",
+                    "appId": "1:1049467164942:android:4eb1c03ed303698a301f5f",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "smartscope-79619",
+                    "configurations": {
+                        "android": "1:1049467164942:android:4eb1c03ed303698a301f5f",
+                        "ios": "1:1049467164942:ios:c6a40b3febb27152301f5f",
+                        "macos": "1:1049467164942:ios:c6a40b3febb27152301f5f",
+                        "web": "1:1049467164942:web:5f53e0373b2ee342301f5f",
+                        "windows": "1:1049467164942:web:ee894fb875f6e4fb301f5f"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:smartscope/HomePage.dart';
 import 'AuthPage.dart';
 import 'login_form.dart';
 import 'Drawer.dart';
 import 'signup_form.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
   
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+  options: DefaultFirebaseOptions.currentPlatform,
+);
   runApp(const MyApp());
 }
 
@@ -16,6 +23,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+routes: {
+        '/home': (context) => const HomePage(),
+      },
       debugShowCheckedModeBanner:   false,
       title: 'Flutter Demo',
       theme: ThemeData(
